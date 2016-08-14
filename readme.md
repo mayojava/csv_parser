@@ -3,7 +3,7 @@ PHP CSV parser that can convert a csv file to an Object and also
 converts an json object array to csv
 
 ## Sample Usage
-* To use, call `Parser.parser($filePath, $outputFilePath)`. The `outputFilePath`
+* To use, call `Parser.parse($filePath, $outputFilePath)`. The `outputFilePath`
 parameter is optional. If not passed, output file will be saved in
 `./output/output.json`
 
