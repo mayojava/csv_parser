@@ -6,9 +6,16 @@
     $csvfile = 'input.csv';
     $jsonfile = 'input.json';
 
-    //parse csv to object
-    Parser::parse($csvfile);
+    try {
+        //parse csv to object
+        Parser::parse($csvfile);
 
-    //parse json array to csv
-    Parser::parse($jsonfile);
+        //parse json array to csv
+        Parser::parse($jsonfile);
+
+        echo 'done';
+        
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
 ?>

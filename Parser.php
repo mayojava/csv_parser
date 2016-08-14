@@ -64,7 +64,7 @@
                     self::writeToFile(PHP_EOL, $outputfilename);
                 }
             } else {
-                throw new Exception('invalid input file format');
+                throw new Exception('invalid input json file');
             }
         }
 
