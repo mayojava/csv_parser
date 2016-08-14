@@ -104,6 +104,7 @@
                             self::throwInvalidFieldInRowException(++$rowCount);
                         }
 
+                        $keyValue[0] = trim($keyValue[0]);
                         $rowObject->$keyValue[0] = $keyValue[1];
                     }
 
